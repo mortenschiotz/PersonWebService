@@ -1,15 +1,17 @@
 package no.morten.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
+import javax.persistence.*;
 
 /**
  * Created by mortens on 18.12.2016.
  */
 @Entity
 @Table(name = "gender")
+@Cacheable
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "person")
 public class Gender {
     @Id
     @Column(name = "id")

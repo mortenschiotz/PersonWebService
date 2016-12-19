@@ -10,6 +10,18 @@
         <property name="connection.username">ms</property>
         <property name="connection.password">passord</property>
 
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">true</property>
+
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.use_query_cache">true</property>
+        <property name="net.sf.ehcache.configurationResourceName">/ehcache.xml</property>
+
+
         <mapping class="no.morten.model.Person"/>
         <mapping class="no.morten.model.Male"/>
         <mapping class="no.morten.model.Female"/>

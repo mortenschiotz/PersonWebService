@@ -28,6 +28,7 @@ public class PersonService {
 
     private static SessionFactory getSessionFactory() {
         if(sessionFactory == null) {
+
             sessionFactory = new Configuration()
                     .configure()
                     .buildSessionFactory();

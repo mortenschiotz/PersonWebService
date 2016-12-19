@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ehcache>
+    <defaultCache maxElementsInMemory="100" eternal="false" timeToIdleSeconds="120" timeToLiveSeconds="200" />
+
+    <cache name="person"
+           maxElementsInMemory="50"
+           eternal="false"
+           timeToLiveSeconds="600"
+    />
+
+    <cache name="no.morten.model.Male"
+           maxElementsInMemory="50"
+           eternal="false"
+           timeToLiveSeconds="600"
+    />
+
+    <cache name="no.morten.model.Female"
+           maxElementsInMemory="50"
+           eternal="false"
+           timeToLiveSeconds="600"
+    />
+</ehcache>
