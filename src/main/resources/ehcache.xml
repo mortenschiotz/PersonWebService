@@ -2,21 +2,54 @@
 <ehcache>
     <defaultCache maxElementsInMemory="100" eternal="false" timeToIdleSeconds="120" timeToLiveSeconds="200" />
 
-    <cache name="person"
+    <cache
+            name="org.hibernate.cache.StandardQueryCache"
+            maxEntriesLocalHeap="5"
+            eternal="false"
+            timeToLiveSeconds="120"
+            overflowToDisk="true"/>
+
+    <cache
+            name="org.hibernate.cache.UpdateTimestampsCache"
+            maxEntriesLocalHeap="5000"
+            eternal="true"
+            overflowToDisk="true"/>
+
+    <cache name="no.morten.model.Person"
            maxElementsInMemory="50"
            eternal="false"
-           timeToLiveSeconds="600"
-    />
+           timeToLiveSeconds="600">
+
+       <persistence strategy="localTempSwap"/>
+    </cache>
+
 
     <cache name="no.morten.model.Male"
            maxElementsInMemory="50"
            eternal="false"
-           timeToLiveSeconds="600"
-    />
+           timeToLiveSeconds="6000">
+        <persistence strategy="localTempSwap"/>
+    </cache>
 
     <cache name="no.morten.model.Female"
            maxElementsInMemory="50"
            eternal="false"
-           timeToLiveSeconds="600"
-    />
+           timeToLiveSeconds="6000">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+
+    <cache name="no.morten.model.PersonType"
+           maxElementsInMemory="50"
+           eternal="false"
+           timeToLiveSeconds="6000">
+    <persistence strategy="localTempSwap"/>
+    </cache>
+
+    <cache name="no.morten.model.Gender"
+           maxElementsInMemory="50"
+           eternal="false"
+           timeToLiveSeconds="6000">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+
 </ehcache>
