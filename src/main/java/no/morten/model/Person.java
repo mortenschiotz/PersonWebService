@@ -3,10 +3,12 @@ package no.morten.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.*;
+import org.hibernate.annotations.Cache;
 
 import javax.persistence.*;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -15,8 +17,8 @@ import java.util.Set;
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "gender_id", discriminatorType = DiscriminatorType.INTEGER)
 @Cacheable
-@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "person")
-public class Person {
+@Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE, region = "no.morten.model.Person")
+public class Person implements Serializable{
     @Id
     @Column(name = "person_id")
     private Integer id;
