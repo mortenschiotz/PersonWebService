@@ -37,7 +37,7 @@ public class Person implements Serializable{
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "p_pt", joinColumns = {@JoinColumn(name = "person_id", nullable = false, updatable = false)},
             inverseJoinColumns = {@JoinColumn(name = "person_type_id", nullable = false, updatable = false)})
-    private Set<PersonType> personTypes = new HashSet<PersonType>();
+    private Set<PersonType> personTypes = new HashSet<>();
 
     public Integer getId() {
         return id;

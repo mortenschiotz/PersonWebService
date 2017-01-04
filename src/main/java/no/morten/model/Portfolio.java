@@ -23,5 +23,12 @@ public class Portfolio {
         this.numberOfShares = numberOfShares;
     }
 
+    @Override
+    public String toString() {
+        return "Portfolio{" +
+                "ticker='" + ticker + '\'' +
+                ", numberOfShares=" + numberOfShares +
+                '}';
+    }
 }
 
