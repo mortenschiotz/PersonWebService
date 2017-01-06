@@ -1,0 +1,10 @@
+no/morten/services/PersonService.class
+no/morten/model/PersonType.class
+no/morten/model/Portfolio.class
+no/morten/model/Gender.class
+no/morten/model/Female.class
+no/morten/model/Male.class
+no/morten/model/Person.class
+no/morten/services/PortfolioService.class
+no/morten/App.class
+no/morten/controllers/PersonController.class

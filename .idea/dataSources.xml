@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="sample@localhost" uuid="143c0a0d-2852-4acc-a558-20cdc3a95acc">
+      <driver-ref>db2</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.ibm.db2.jcc.DB2Driver</jdbc-driver>
+      <jdbc-url>jdbc:db2://localhost:50000/sample</jdbc-url>
+      <driver-properties>
+        <property name="retrieveMessagesFromServerOnGetMessage" value="true" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="b35a814d-2d99-4457-bb50-9cc25f49102e">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/morten</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/mysql-connector-license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/mysql-connector-java-5.1.35-bin.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="AT6Q_VOKAL@msc-pc.conexus.local" uuid="fd724cdb-6e41-4dc3-a2e7-a35a065c9377">
+      <driver-ref>sqlserver.jtds</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>net.sourceforge.jtds.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:jtds:sqlserver://msc-pc.conexus.local:1433/AT6Q_VOKAL;domain=conexus</jdbc-url>
+    </data-source>
+  </component>
+</project>

@@ -4,7 +4,7 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
-          <unit-entry name="hibernate.cfg.xml" />
+          <unit-entry name="hibernate.cfg.xml" value="b35a814d-2d99-4457-bb50-9cc25f49102e" />
           <unit-entry name="resources:hibernate.cfg.xml" />
         </datasource-map>
         <naming-strategy-map />
@@ -57,13 +57,6 @@
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:8.5.6" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-validator:5.2.4.Final" level="project" />
     <orderEntry type="library" name="Maven: javax.validation:validation-api:1.1.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.4" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.4" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.4" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.4.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.3.4.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.4.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.3.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.3.4.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-test:1.4.2.RELEASE" level="project" />
@@ -83,6 +76,13 @@
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:accessors-smart:1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.ow2.asm:asm:5.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.3.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.4" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.4" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.4" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.7" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.7" level="project" />
     <orderEntry type="library" name="Maven: org.ehcache:ehcache:3.2.0" level="project" />

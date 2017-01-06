@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="sample@localhost" uuid="143c0a0d-2852-4acc-a558-20cdc3a95acc">
+      <database-info product="DB2/LINUXX8664" version="SQL10055" jdbc-version="4.0" driver-name="IBM Data Server Driver for JDBC and SQLJ" driver-version="4.7.85">
+        <extra-name-characters>@#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>db2inst1</user-name>
+      <resolve-scope>:DB2INST1</resolve-scope>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="b35a814d-2d99-4457-bb50-9cc25f49102e">
+      <database-info product="MySQL" version="5.7.16" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper" />
+      <user-name>ms</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfc5dfd8dfce</user-password>
+      <resolve-scope>morten:</resolve-scope>
+    </data-source>
+    <data-source name="AT6Q_VOKAL@msc-pc.conexus.local" uuid="fd724cdb-6e41-4dc3-a2e7-a35a065c9377">
+      <database-info product="Microsoft SQL Server" version="11.00.6248" jdbc-version="3.0" driver-name="jTDS Type 4 JDBC Driver for MS SQL Server and Sybase" driver-version="1.3.0">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>msc</user-name>
+      <resolve-scope>AT6Q_VOKAL:*</resolve-scope>
+    </data-source>
+  </component>
+</project>
