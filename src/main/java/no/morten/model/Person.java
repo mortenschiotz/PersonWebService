@@ -8,6 +8,7 @@ import org.hibernate.annotations.Cache;
 import javax.persistence.*;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import javax.sound.sampled.Port;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
@@ -33,6 +34,16 @@ public class Person implements Serializable{
     @JoinColumn(name = "gender_id", insertable = false, updatable = false)
     private Gender gender;
 
+    public Portfolio getPortfolio() {
+        return portfolio;
+    }
+
+    public void setPortfolio(Portfolio portfolio) {
+        this.portfolio = portfolio;
+    }
+
+    @Transient
+    private Portfolio portfolio;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "p_pt", joinColumns = {@JoinColumn(name = "person_id", nullable = false, updatable = false)},

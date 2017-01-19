@@ -10,9 +10,11 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
+import java.util.function.Predicate;
 
 @RestController
 public class PersonController {
@@ -30,19 +32,16 @@ public class PersonController {
 
         Person person = svc.getPerson(id);
 
-        logger.info("getting portfolio");
-        Future<List<Portfolio>> f = portfolioService.getPortfolio(person.getId());
-        logger.info("got portfolio future");
-
         try {
+            Future<List<Portfolio>> f = portfolioService.getPortfolio(person.getId());
             List<Portfolio> p = f.get();
 
-            p.stream().filter(pp -> pp.getNumberOfShares() > 1000).forEach(System.out::println);
+            Portfolio portfolio = p.stream().max(Comparator.comparingInt(Portfolio::getNumberOfShares)).get();
+            person.setPortfolio(portfolio);
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
         }
-
-        logger.info("got portfolio");
 
         if(person == null) {
             response.setStatus(HttpServletResponse.SC_NO_CONTENT);
